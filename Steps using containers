@@ -1,4 +1,10 @@
+https://youtu.be/xOgdMcGW56U?list=PLQGFK8RiEPSK_XZw1DSDfd2N3zlMDqBgV
+
+###########################################
+###########################################
 #### Steps to deploy frappe containers ####
+###########################################
+###########################################
 
 ### Clone frappe docker
 git clone https://github.com/frappe/frappe_docker my_frappe_docker
