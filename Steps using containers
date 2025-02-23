@@ -11,5 +11,7 @@ cp -R devcontainer-example .devcontainer
 cp -R development/vscode-example development/.vscode
 code .
 
+### The directory my_frappe_docker can have multiple benches that dont conflict with each other.
+### You can have a container running, then stop it and re-run another one to continue development, etc...
 
 
