@@ -14,4 +14,9 @@ code .
 ### The directory my_frappe_docker can have multiple benches that dont conflict with each other.
 ### You can have a container running, then stop it and re-run another one to continue development, etc...
 
+### In vscode: ###
+### ctrl + shift + p -> then reopen in container 
+### all the requirements to develop frappe apps already set up in this environment.
+
+
 
