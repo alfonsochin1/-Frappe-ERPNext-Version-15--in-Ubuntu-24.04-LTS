@@ -31,4 +31,10 @@ code .
 ## cd into frappe container environment in vscode and open terminal
 ## code apps.json (this file includes the github of the app to install
 
-
+## Add following to apps.json
+[
+  {
+    "url": "https://github.com/frappe/gameplan",
+    "branch": "main"
+  }
+]
