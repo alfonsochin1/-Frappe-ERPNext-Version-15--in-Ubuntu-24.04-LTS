@@ -1,7 +1,6 @@
 #### Steps to deploy frappe containers ####
 
-
-`git clone https://github.com/frappe/frappe_docker my_frappe_docker` 
+#Clone frappe docker
+git clone https://github.com/frappe/frappe_docker my_frappe_docker
 cd my_frappe_docker
 
-`` hola ``
