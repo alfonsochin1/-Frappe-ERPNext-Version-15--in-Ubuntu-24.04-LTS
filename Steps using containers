@@ -1,6 +1,14 @@
 #### Steps to deploy frappe containers ####
 
-#Clone frappe docker
+### Clone frappe docker
 git clone https://github.com/frappe/frappe_docker my_frappe_docker
 cd my_frappe_docker
+
+
+### For development, and to set up VSCODE:
+cp -R devcontainer-example .devcontainer
+cp -R development/vscode-example development/.vscode
+code .
+
+
 
