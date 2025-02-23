@@ -38,3 +38,14 @@ code .
     "branch": "main"
   }
 ]
+
+## RUN the installer script:
+./installer.py -t develop -p 3.11.4 -n v18 -j apps.json -v
+./installer.py --help  
+
+# -j -> you can configure which apps to install, default: apps-example.json
+# -s -> define your sitename, default: development.localhost  !!It must end with .localhost
+# -b -> your bench name, default: frappe-bench
+# -t -> frappe branch version, default> version-15
+
+
