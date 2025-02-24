@@ -57,7 +57,7 @@ code .
   nvm use v18
 bench start
 
-## To add mailhog suppor, go to frappe_docker/.devcontainer/docker-compose.yml and add the following:
+## To add mailhog suppor, go to frappe_docker/.devcontainer/docker-compose.yml and add the following: (watch video for details)
   # Mock SMTP
   mailhog:
     image: mailhog/mailhog:v1.0.1
