@@ -57,4 +57,24 @@ code .
   nvm use v18
 bench start
 
+## To add mailhog suppor, go to frappe_docker/.devcontainer/docker-compose.yml and add the following:
+  # Mock SMTP
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    environment:
+      - MH_STORAGE=maildir
+    volumes:
+      - mailhog-data:/maildir
+    ports:
+      - 1025:1025
+      - 8025:8025
+
+...
+volumes:
+  ...
+  mailhog-data:
+
+## ctrl +shift + p 
+## Then select dev containers: rebuild and reopen container.
+## Any change in the container configuration requires to rebuild and reopen.
 
