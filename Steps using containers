@@ -128,6 +128,12 @@ docker compose -p <project name> -f pwd.yml  stop
 ## To bring the data from the DB to the new container, you can simply copy the db and use migrate to update database. CHeck frappe tutorials for this.
 ## HOwever, you do need to make sure that the apps running in your bench are the same running in the bench with your database, otherwise it wont work.
 
+##########################################################
+##TO mount the image in VM machine ready for production ##
+##########################################################
+# GO to frappe_bench and use customize image installer script:
+wget https://raw.githubusercontent.com/revant/bench/custom-image-asy-install/easy-install.py
+python3 easy-install.py --prod eemail <your-email> --version latest --image <registry>
 
 
 
