@@ -123,6 +123,8 @@ docker logs gameplan-create-site-1 -f
 ## TO stop all the containers in the docker project:
 docker compose -p <project name> -f pwd.yml  stop
 
+#REmove container using rf with docker compose, check cmd.
+
 
 
 
