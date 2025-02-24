@@ -50,4 +50,11 @@ code .
 # -b -> your bench name, default: frappe-bench
 # -t -> frappe branch version, default> version-15
 
+## For Gameplan only
+  cp ~/.u2net/u2net.onnx /workspace/development
+## ELSE:
+  cd frappe-bench
+  nvm use v18
+bench start
+
 
