@@ -78,7 +78,31 @@ volumes:
 ## Then select dev containers: rebuild and reopen container.
 ## Any change in the container configuration file requires to rebuild and reopen.
 
-## CD INTO Your frappe bench and then >build start;
+## CD INTO Your frappe bench and then
+nvm use v18
+bench start
+
+
+
+############################
+###### FOR PRODUCTION ######
+
+## Reopen locally.
+## Add following in images/custom/Containerfile only for GAMEPLAN!!!!
+COPY --chown=frappe:frappe ./development/u2net.onnx /home/frappe/.u2net/u2net.onnx   
+
+export APPS_JSON_BASE64=$(base64 -w 0 ./development/apps.json)
+docker build \
+  --build-arg=FRAPPE_PATH=https://github.com/frappe/frappe \
+  --build-arg=FRAPPE_BRANCH=develop \
+  --build-arg=PYTHON_VERSION=3.11.4 \
+  --build-arg=NODE_VERSION=18.17.1 \
+  --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
+  --tag=registry.gitlab.com/castlecraft/cepl-erpnext-images/gameplan:latest \
+  --file=images/custom/Containerfile .
+
+## Push image
+docker push registry.gitlab.com/castlecraft/cepl-erpnext-images/gameplan:latest
 
 
 
