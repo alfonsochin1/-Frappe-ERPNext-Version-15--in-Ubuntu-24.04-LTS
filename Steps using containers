@@ -133,7 +133,7 @@ docker compose -p <project name> -f pwd.yml  stop
 ##########################################################
 # GO to frappe_bench and use customize image installer script:
 wget https://raw.githubusercontent.com/revant/bench/custom-image-asy-install/easy-install.py
-python3 easy-install.py --prod eemail <your-email> --version latest --image <registry>
+python3 easy-install.py --prod eemail <your-email> --version latest --image <registry> -s <your-site-name>
 
 
 
