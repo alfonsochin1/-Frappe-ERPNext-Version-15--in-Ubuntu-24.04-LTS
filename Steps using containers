@@ -118,7 +118,8 @@ docker compose -p gameplan -f pwd.yml up -d
 ## Check site logs
 docker logs gameplan-create-site-1 -f
 
-## Open site http://localhost:8080
+## Open site http://localhost:8080 !!!You need to check the logs first to make sure the site is up and running.
+
 
 
 
