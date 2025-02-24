@@ -24,6 +24,8 @@ code .
 ### ctrl + shift + p -> then reopen in container 
 ### VSCODE detected the devcontainer.json file and started all the containers required for the development environment.
 ### all the requirements to develop frappe apps already set up in this environment.
+## !Notice this wont create frontend and backend containers.
+
 
 ############################################################
 ### Install frappe erpnext with a custom app via script. ###
