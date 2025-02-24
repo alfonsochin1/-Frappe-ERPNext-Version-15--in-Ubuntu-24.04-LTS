@@ -76,5 +76,16 @@ volumes:
 
 ## ctrl +shift + p 
 ## Then select dev containers: rebuild and reopen container.
-## Any change in the container configuration requires to rebuild and reopen.
+## Any change in the container configuration file requires to rebuild and reopen.
+
+## CD INTO Your frappe bench and then >build start;
+
+
+
+
+
+
+
+
+
 
