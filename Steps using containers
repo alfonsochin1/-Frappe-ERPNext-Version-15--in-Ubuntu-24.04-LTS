@@ -125,7 +125,7 @@ docker compose -p <project name> -f pwd.yml  stop
 
 #REmove container using rf with docker compose, check cmd.
 
-
+## To bring the data from the DB to the new container, you can simply copy the db and use migrate to update database. CHeck frappe tutorials for this.
 
 
 
