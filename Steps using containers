@@ -50,6 +50,10 @@ code .
 # -b -> your bench name, default: frappe-bench
 # -t -> frappe branch version, default> version-15
 
+## If any issue happens with db already exists, then go into the mariadb container, run   mysql -u root -p and delete the db complaining.
+## Then run installer.py again
+
+
 ## For Gameplan only
   cp ~/.u2net/u2net.onnx /workspace/development
 ## ELSE:
